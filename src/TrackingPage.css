@@ -262,8 +262,8 @@ body, html {
 
 .video-container {
   position: relative;
-  border: 1px solid var(--brand-green);
-  border-radius: 16px;
+  border: 2px solid var(--brand-green);
+  border-radius: 3px;
   background: black;
   width: 100%;
   height: 60vh;
@@ -300,7 +300,8 @@ body, html {
 .main-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
+
 }
 
 .rep-quality {
