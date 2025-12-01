@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/hands": "^0.4.1675469240",
+    "@mediapipe/holistic": "^0.5.1675471629",
+    "@mediapipe/pose": "^0.5.1675469404",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.553.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "three": "^0.181.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

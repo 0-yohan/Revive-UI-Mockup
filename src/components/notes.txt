@@ -1,0 +1,22 @@
+      camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 100);
+      camera.position.set(0, 1.6, 3);
+
+
+                // scale + center model to fit the scene neatly
+          const box = new THREE.Box3().setFromObject(humanoid);
+          const size = new THREE.Vector3();
+          box.getSize(size);
+          const maxDim = Math.max(size.x, size.y, size.z);
+          const desired = 1.6; // desired size scale factor (tune if needed)
+          const scale = desired / maxDim;
+          humanoid.scale.setScalar(scale);
+
+                    // center on origin
+          box.setFromObject(humanoid);
+          const center = new THREE.Vector3();
+          box.getCenter(center);
+          humanoid.position.sub(center);
+                    // move slightly down so feet sit at -1
+          humanoid.position.y -= -1.2;
+
+          scene.add(humanoid);
